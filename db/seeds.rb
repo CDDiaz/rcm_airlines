@@ -19,12 +19,12 @@ a5 = Airplane.create :name => '757', :row => '3', :column => '18'
 puts "#{ Airplane.count } songs"
 
 Flight.destroy_all
-f1 =Flight.create :flight_number => '23', :origin => 'Sydney', :destination => 'Brisbane'
-f2 =Flight.create :flight_number => '87', :origin => 'Perth', :destination => 'Sydney'
-f3 =Flight.create:flight_number => '09', :origin => 'Brisbane', :destination => 'Melbourne'
-f4= Flight.create :flight_number => '24', :origin => 'Melbourne', :destination => 'Perth'
-f5= Flight.create :flight_number => '13', :origin => 'Melbourne', :destination => 'Sydney'
-f6= Flight.create :flight_number => '07', :origin => 'Perth', :destination => 'Brisbane'
+f1 =Flight.create :flight_number => '23', :origin => 'Sydney', :destination => 'Brisbane', :date => '2021-09-20'
+f2 =Flight.create :flight_number => '87', :origin => 'Perth', :destination => 'Sydney', :date => '2021-09-21'
+f3 =Flight.create:flight_number => '09', :origin => 'Brisbane', :destination => 'Melbourne', :date => '2021-09-22'
+f4= Flight.create :flight_number => '24', :origin => 'Melbourne', :destination => 'Perth', :date => '2021-09-23'
+f5= Flight.create :flight_number => '13', :origin => 'Melbourne', :destination => 'Sydney', :date => '2021-09-24'
+f6= Flight.create :flight_number => '07', :origin => 'Perth', :destination => 'Brisbane', :date => '2021-09-25'
 puts "#{ Flight.count } albums"
 
 Reservation.destroy_all
