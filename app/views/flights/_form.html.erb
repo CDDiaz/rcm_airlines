@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :airplane_id %>
-    <%= form.text_area :airplane_id %>
+    <%= form.select :airplane_id, Airplane.pluck(:name, :id), :include_blank => true %>
   </div>
 
   <div class="actions">
