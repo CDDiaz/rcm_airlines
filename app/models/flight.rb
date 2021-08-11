@@ -1,4 +1,4 @@
 class Flight < ApplicationRecord
-  belongs_to :airplanes, :optional => true
+  belongs_to :airplane, :optional => true
   has_many :reservations
 end
